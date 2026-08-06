@@ -79,7 +79,13 @@
       width="550"
       height="309"
       >
-  <button></button>
+  <button onclick = "changeMessage()">Message reveal</button>
+  <p id = "message"> Click the button to reveal a message for you!<p>
+  <script>
+    function changeMessage() {
+        document.getElementById("message").textContent = "You're doing great! I hope your recipe turns out awesome!";
+    }
+  </script>
 </body>
 
 
