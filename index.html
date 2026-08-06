@@ -9,23 +9,29 @@
       >
 
     <title>Kids Cooking Website</title>
-
+    
     <style>
+      button {
+        background-color: rgb(163 39 255);
+        color: white;
+        padding: 10px 16px;
+        font-family: Times;
+        border-radius: 34px;
+        border: 2px solid white;
+      }
+      button:hover {
+        background-color: rgb(216 164 255);
+      }
       body {
-        background-color: lightblue;
+        background-color: rgb(190 103 255);
         font-family: Times;
         text-align: center;
+        color: rgb(242 225 255);
       }
 
       .centered-list {
         width: fit-content;
         margin: 0 auto;
-        text-align: center;
-      }
-      h3 {
-        text-align: center;
-      }
-      li {
         text-align: center;
       }
 
@@ -45,16 +51,21 @@
   padding-left: 30px;
   text-align: left;
 }
+img {
+  border: 5px solid white;
+  border-radius: 34px;
+}
     </style>
+
+    
+    
 </head>
 <body>
-  
-  <h1>Welcome to the Kids Cookbook!</h1>
-  <p>If you're a kid around 12-13 years old, you can find doable recipes to surprise your family!</p>
-  <h2> Making an omelette</h2>
-<div class="list-section">
-  <h3>Ingredients:</h3>
-
+  <h1>  Welcome to the Kids Cookbook!</h1>
+  <p>  If you're a kid around 12-13 years old, you can find doable recipes to surprise your family!</p>
+  <h2>   Making an omelette</h2>
+  <div class="list-section">
+  <h3>  Ingredients:</h3>
   <ul>
     <li>3-4 eggs</li>
     <li>Chopped bell peppers</li>
@@ -62,11 +73,9 @@
     <li>About half a spoon of salt</li>
     <li>About half a spoon of red chili powder</li>
   </ul>
-</div>
-
-<div class="list-section">
+  </div>
+  <div class="list-section">
   <h3>Steps to Cook</h3>
-
   <ol>
     <li>Crack the eggs into a tall glass or bowl</li>
     <li>Add in the chopped vegetables</li>
@@ -78,11 +87,24 @@
     <li>Place the omelette between the two slices of bread and add your preferred items in the sandwich (avacado, onion, etc.).</li>
     <li>Serve and enjoy!</li>
   </ol>
-</div>
-
+    <br><br>
+    <img
+      src= "550px-nowatermark-Flip-an-Omelet-Step-3-Version-3.jpg"
+      alt= "Flipping Omelette Image"
+      width="550"
+      height="309"
+      >
+    <br><br>
+  <button onclick = "changeMessage()">Click the button to reveal a message for you!</button>
+  <p id = "message"> Click the button to reveal a message for you!<p>
+  <script>
+    function changeMessage() {
+        document.getElementById("message").textContent = "You're doing great! I hope your recipe turns out awesome!";
+    }
+  </script>
 </body>
 
-
+</html>
 
 
   
